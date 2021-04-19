@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    scroll-behavior:smooth;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    /* background-image:
+    linear-gradient(to right top, rgba(45, 235, 219, 0.774), rgba(18, 236, 134, 0.541)),
+    url('./img/background.jpg');
+    background-size: cover; */
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-image:
+    linear-gradient(to right bottom, rgba(45, 235, 219, 0.52), rgba(18, 236, 134, 0.603)),
+    url('./img/background.jpg');
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    cursor: pointer;
+    max-width: 5%;
+}
+
+.logo:hover{
+    animation: shakeY;
+    animation-duration: 2s;
+}
+
+
+.nav-links{
+    list-style: none;
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;;
+}
+
+.nav-links a:hover{
+    color: green;
+}
+
+button{
+    padding: 9px;
+    background-color: rgb(0, 144, 48);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
+/* FIRST SECTION */
+
+.info-bar{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    background-color: rgb(0, 175, 67);
+    clip-path: polygon(25% 0%, 74% 0, 44% 100%, 0% 100%);
+    position: absolute;
+    z-index: -1;
+}
+
+.img-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-text p{
+
+    margin-top: 180px;
+    margin-left: 200px;
+    padding: 1em 1em;
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    line-height: 1.6;
+    width: 60%;
+    text-align: center;
+
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+#green-span{
+    color: green;
+}
+
+/* SECOND SECTION */
+
+
+.opinions{
+    display: flex;
+    justify-content: center;
+}
+
+.face-avatar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 110px;
+    width: 60%;
+    height: 200px;
+    background-color: rgba(255, 251, 251, 0.267);
+    border-radius: 50px;
+}
+
+.face-avatar img{
+    width: 120px;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.face-avatar span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-right: 50px;
+}
+
+#second-comment, #third-comment{
+    color: green;
+}
+
+
+/* ABOUT FIRST PRODUCT STYLES */
+
+.product-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+
+.about-product{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 400px;
+    
+}
+
+#eco-p{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.75em;
+    color: black;
+}
+
+#motto{
+    color: green;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+
+
+.product-1{
+
+    border: 0.5px solid #fff;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+
+
+/* LAB SECTION */
+
+.lab-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.about-lab{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 400px;
+}
+
+#lab-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+.lab-photo{
+
+    border: 0.5px solid #fff;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: -10px -10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+
+/* CONTACT US DIV */
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#contact{
+    color: green;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+/* Wyłączona widocznośc na wypadek braku źródła */
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1281px) and (max-width: 1919px) {
+    
+    .about-text p{
+        width: 80%;
+        margin-top: 170px;
+        margin-left: 10px;
+    }
+
+    .opinions{
+        margin-top: 50px;
+    }
+
+    .face-avatar{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        background-color: rgba(240, 240, 240, 0.424);
+    }
+
+    .face-avatar span{
+        color: green;
+    }
+
+    #eco-p{
+        padding-left: 2.125em;
+    }
+
+    #lab-text{
+        padding-right: 2.125em;
+        color: black;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    .info-bar{
+        display: none;
+    }
+
+    .eco-draw{
+        display: none;
+    }
+
+
+  }
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR Company</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+
+    <header>
+        <img src="./img/logo.svg" alt="logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./career.html">Order</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>Contact</button></a>
+        
+    </header>
+
+    <div class="info-bar"></div>
+
+    <article id="first-one">
+        <div class="img-box">
+            <img src="./img/eco_draw.svg" alt="eco-draw" class="eco-draw">
+            <div class="about-text">
+                <p>Our products are made from the most eco materials. It helps us keep our planet as <span id="green-span">green</span> as possible. We belive it is not too late to save our planet.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="opinions">
+        <div class="face-avatar">
+            <img src="./img/avatar1.jpg" alt="avatar1" class="avatar1">
+            <span>JUST WOW</span>
+            <img src="./img/avatar3.jpg" alt="avatar2" class="avatar2">
+            <span id="second-comment">Amazing company</span>
+            <img src="./img/avatar2.jpg" alt="avatar3" class="avatar3">
+            <span id="third-comment">Spechless...</span>
+        </div>
+    </article>
+
+    <section class="product-section">
+        <div class="about-product">
+            <img src="./img/eco-product.jpg" alt="product-1" class="product-1">
+            <p id="eco-p">We provide common home use eco products that are the best for your body and helth. <br><br> <span id="motto">Nature is our passion</span></p>
+        </div>
+    </section>
+
+    <section class="lab-section">
+        <div class="about-lab">
+            <p id="lab-text">The best chemists in the world, spends hours in the labs to create uniqe recipe of our cosmetics</p>
+            <img src="./img/lab.jpg" alt="lab-photo" class="lab-photo">
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="contact-pbox">
+            <p id="contact">Contact Us for more!</p>
+        </div>
+    </section>
+
+    
+    <!-- SKRYPTY SCROLLOWANIA -->
+    <script>
+        ScrollReveal().reveal('.product-section', { delay: 1000 } );
+        ScrollReveal().reveal('.lab-section', { delay: 1500 });
+        ScrollReveal().reveal('.contact-us', { delay: 1000 });
+    </script>
+
+</body>
+</html>
